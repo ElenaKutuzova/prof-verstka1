@@ -1,0 +1,48 @@
+.header{
+    background-color: #222222;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: relative;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;              
+        }
+    
+    &-col{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+    &-logo{
+        text-decoration: none;
+        color: transparent;
+        margin-right: 41px;
+    }
+    &-search, &-menu{
+        background-color: transparent;
+        border: none;
+        fill: #fff;
+        cursor: pointer;
+        transition:  fill 0.4s; 
+    }
+    &-search:hover{
+        fill: $main-color;
+    }
+    &-menu:hover{
+        fill: $main-color;
+    }
+    &-registry, &-cart{
+        text-decoration: none;    
+        margin-left: 33px;
+        fill:#fff ;
+        transition:  fill 0.4s; 
+    }
+    &-registry:hover{
+        fill: $main-color;
+    }
+    &-cart:hover{
+        fill: $main-color;
+    }
+}
