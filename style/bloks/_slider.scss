@@ -6,6 +6,7 @@
 	justify-content: space-between;
 	align-items: center;
     padding-bottom: 60px;
+    
     &-btn{
         width: 47px;
         height: 47px;
@@ -18,6 +19,11 @@
             fill:$main-color;
         }
     }
-    
+    &-img{
+        @media(max-width: $tablet-bp){
+            
+            height: 374px;
+        }
+    }
    
 }

@@ -7,15 +7,37 @@
           background-color:  #FFFFFF;
           display: flex;
           flex-direction: column;
-          
+          @media(max-width: $tablet-bp){
+            flex-direction: unset;
+            align-items: center;
+            margin-top: 0px;
+          }
+          @media (max-width:$mobile-bp) {
+            margin-top: 0px;
+            border: none;
+            border-bottom: 1px solid #EAEAEA;
+          }
           &-wrap{
             padding: 65px 250px;
-            text-align: center
+            text-align: center;
+            @media(max-width: $tablet-bp){
+              padding: 65px 107px;              
+              align-items: center;
             }
-    }
+            @media (max-width: $mobile-bp) {
+              padding: 32px 0;            
+              
+            }
+          }
+        }
+      
     &__category{
         @include font-14-17;
         color: $main-color;
+        @media (max-width:$mobile-bp) {
+          margin-top: 64px;
+        }
+    
         
         &-line{
             width: 63px;
@@ -25,7 +47,8 @@
             margin: 12px auto;
                      
         }
-    }
+      }
+    
     &__name{
       font-weight: 300;
       font-size: 18px;
@@ -37,6 +60,9 @@
       text-align: center;
       color: #5E5E5E;    
       margin: 48px 40px 32px 40px ;
+      @media (max-width:$mobile-bp) {
+        margin: 32px 25px;
+      }
     }
     &__price{
       font-weight: 300;
@@ -46,7 +72,10 @@
       
       &-line{
           margin: 65px auto;
-          border: 1px solid #EAEAEA
+          border: 1px solid #EAEAEA;
+          @media (max-width:$mobile-bp) {
+            width: 175px;
+          }
       }
     }
     &__filter{
@@ -65,7 +94,9 @@
       fill: #EF5B70;
       cursor: pointer; 
      transition: color 0.4s, fill 0.4s, background 0.3s;
-     
+     @media (max-width: $mobile-bp) {
+       margin-bottom: 65px;
+     }
      
       
       

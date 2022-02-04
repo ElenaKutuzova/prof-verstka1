@@ -25,6 +25,12 @@ body{
 .wrap{
     width: 1140px;
     margin: 0 auto;
+    @media (max-width:$tablet-bp){
+        width: 736px;
+    }
+    @media(max-width: $mobile-bp){
+        width: 360px;
+    }
    
 }
 .main{

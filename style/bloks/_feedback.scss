@@ -6,8 +6,29 @@
     background-position: left bottom;    
     padding-top: 100px;
     padding-bottom: 155px;
+    @media(max-width: $tablet-bp){
+        padding-top: 64px;
+        padding-bottom: 140px;        
+        background-position-x: -350px;
+            background-position-y: 100px;
+    }
+    @media(max-width: $tablet-bp){
+        padding-top: 64px;
+        padding-bottom: 110px;   
+        background-position-y: 0px;
+        background-position-x: -400px;
+  
+    }  
+   
     &-wrap{
         @include wrap ; 
+        @media(max-width: $tablet-bp){
+            padding-left: 8px;
+            padding-right: 8px;
+            flex-direction: column;
+            align-items: center;
+            
+        }
     }
     &-col--1, &-col--2{
         max-width: 360px;
@@ -35,6 +56,13 @@
         color: #222224;
         padding-bottom: 32px;
         padding-top: 53px;
+        @media(max-width: $tablet-bp){
+            padding-top: 85px;
+            padding-bottom: 28px;
+        }
+        @media(max-width:$mobile-bp){
+            font-size: 14px;
+        }
         &-bold{
             font-weight: bold;
             font-size: 24px;

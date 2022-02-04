@@ -7,6 +7,16 @@
           padding-top: 47px;
           gap: 30px; 
           margin-bottom: 45px;
+          @media (max-width:$tablet-bp) {
+            gap: 16px;
+            padding-top: 128px;
+            margin-bottom: 128px;
+          }
+          @media (max-width:$tablet-bp){
+              padding-top: 65px;
+              margin-bottom: 64px;
+              gap: 1px;
+          }
       }
       &-title{
           font-weight: normal;
@@ -105,11 +115,19 @@
           border: 1px solid #EBEBEB;
           border-radius: 3px;
           padding: 15px;
+          @media(max-width:$mobile-bp){
+              gap: 10px;
+
+          }
       }
       
       &-pagination-item--separator {
           margin: 0 -20px;
           color: #C4C4C4;
+          @media(max-width:$mobile-bp){
+            margin: 0 -15px;
+            
+        }
       }
       &-pagination-link {
           font-weight: 300;
@@ -164,3 +182,8 @@
             }
         }   
   }
+  @media(max-width: $tablet-bp) and (min-width:$mobile-bp){
+      .tablet{
+          display: none;
+      }
+        }

@@ -4,6 +4,13 @@
     gap: 128px;
     margin-top: 64px;
     margin-bottom: 96px;
+    @media (max-width:$tablet-bp){
+        gap: 22px;
+    }
+    @media (max-width:$mobile-bp){
+        gap: 40px;
+        flex-direction: column;
+    }
 }
 .reg_form{
     width: 360px;
@@ -104,11 +111,21 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    @media (max-width:$tablet-bp){
+        font-size: 16px;
+        line-height: 19px;
+
+    }
     &-title{
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
         margin-bottom: 22px;
+        @media (max-width:$tablet-bp){
+            font-size: 16px;
+            line-height: 19px;
+    
+        }
         
     }   
     &-list{

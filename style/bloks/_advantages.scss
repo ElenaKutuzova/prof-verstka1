@@ -3,8 +3,18 @@
     color:  #FBFBFB;
     padding-top: 100px;
     padding-bottom: 100px;
+    @media(max-width:$tablet-bp){
+        padding-top: 48px;
+            padding-bottom: 64px;
+    }
     &-wrap{
-        @include wrap ;      
+        @include wrap ;   
+        @media(max-width: $tablet-bp) {
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+            
+        }  
     }
     &-box{
         max-width: 360px;
