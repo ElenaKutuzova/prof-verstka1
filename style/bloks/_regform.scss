@@ -39,9 +39,8 @@
     &__field{
 
         width: 100%;
-        padding-top: 13px;
-        padding-left: 17px;
-        padding-bottom: 16px;
+        padding: 13px 17px 16px 17px ;
+        
         margin-bottom: 20px;
         border: 1px solid #A4A4A4;
         font-weight: 300;
@@ -49,6 +48,11 @@
         line-height: 16px;
         color: #464444;
         box-sizing: border-box;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
         &::placeholder{
             font-weight: 300;
         font-size: 13px;

@@ -33,7 +33,7 @@
       text-align: center;       
       }
       &-card{
-          max-width: 360px;    
+          width: 360px;    
           background: #F8F8F8;
           position: relative;
           transition: 1s;
@@ -69,10 +69,11 @@
           font-size: 14px;
           line-height: 17px;    
           color: #5D5D5D;
-          padding-top: 12px;
+          
           padding-bottom: 18px;
           padding-left: 17px;
           padding-right: 17px;
+          flex-grow: 1;
       }
       &-price{
           font-weight: normal;
@@ -82,6 +83,7 @@
           padding-left: 17px;
           padding-right: 17px;
           padding-bottom: 20px;
+          
       }
       &-button{       
           text-align: center;
@@ -187,3 +189,10 @@
           display: none;
       }
         }
+.block-card{
+    display: flex;
+    
+    flex-direction: column;
+    
+    
+}
