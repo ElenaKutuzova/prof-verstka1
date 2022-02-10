@@ -4,6 +4,13 @@
     gap: 128px;
     margin-top: 64px;
     margin-bottom: 96px;
+    @media (max-width:$tablet-bp){
+        gap: 22px;
+    }
+    @media (max-width:$mobile-bp){
+        gap: 40px;
+        flex-direction: column;
+    }
 }
 .reg_form{
     width: 360px;
@@ -32,9 +39,8 @@
     &__field{
 
         width: 100%;
-        padding-top: 13px;
-        padding-left: 17px;
-        padding-bottom: 16px;
+        padding: 13px 17px 16px 17px ;
+        
         margin-bottom: 20px;
         border: 1px solid #A4A4A4;
         font-weight: 300;
@@ -42,6 +48,11 @@
         line-height: 16px;
         color: #464444;
         box-sizing: border-box;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
         &::placeholder{
             font-weight: 300;
         font-size: 13px;
@@ -104,11 +115,21 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    @media (max-width:$tablet-bp){
+        font-size: 16px;
+        line-height: 19px;
+
+    }
     &-title{
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
         margin-bottom: 22px;
+        @media (max-width:$tablet-bp){
+            font-size: 16px;
+            line-height: 19px;
+    
+        }
         
     }   
     &-list{

@@ -2,6 +2,9 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    @media (max-width:$tablet-bp)   {
+        flex-direction: column;
+    }
     &__content{
         margin-top: 96px;
     }
@@ -16,6 +19,9 @@
     }
     &__description{
         padding: 22px 97px 55px 31px;
+        @media (max-width:$mobile-bp){
+            padding: 14px 53px 17px 17px;  
+        }
         & .card__quantity{
             width: 2em;
             border: 1px solid #EAEAEA;            
@@ -26,6 +32,11 @@
             line-height: 29px;
             color: #222222;
             margin-bottom: 42px;
+            @media (max-width:$mobile-bp) {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 25px;
+            }
         }
         & p{
             font-weight: normal;
@@ -33,6 +44,9 @@
             line-height: 26px;
             color: #575757;
             margin-bottom: 6px;
+            @media (max-width:$mobile-bp){
+                @include font-14-17;
+            }
         }
         & span {
             color: #EF5B70;
@@ -42,7 +56,14 @@
     &__shipping{
         width: 360px;
         box-sizing: border-box;
-        margin-top: 96px;   
+        margin-top: 96px;  
+        @media (max-width:$tablet-bp) and (min-width:$mobile-bp){
+            display: -webkit-box;
+            gap: 15px;
+        } 
+        @media(max-width:$mobile-bp){
+            margin-top: 0px;
+        }
         
         &-header{
             font-style: normal;
@@ -113,6 +134,18 @@
         fill: #575757;
         transition: fill 0.4s;
         cursor: pointer;
+        & svg{
+
+            @media (max-width:$mobile-bp){
+            width: 9px;
+            height: 11px;
+        }
+    }
+        @media (max-width:$mobile-bp){
+            
+            right: 12px;
+	        top: 17px;
+        }
         &:hover{
             fill: $main-color;
         }
@@ -174,14 +207,32 @@
         margin-bottom: 128px;
         display: flex;
         justify-content: space-between;
+        @media (max-width:$tablet-bp){
+            justify-content: space-evenly;
+        }
+        @media (max-width:$mobile-bp){
+            gap: 9px;
+            margin-bottom: 48px;
+        }
         & button{
             padding: 17px 40px;
             border: 1px solid #A4A4A4;
             background-color: transparent;
             cursor: pointer;
             @include font-14-17;
+            text-transform: uppercase;
             color: #000000;
             transition: color 0.3s, background-color 0.3s ;
+            @media (max-width:$mobile-bp){
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: none;
+                padding: 9px 37px;
+                color: #575757;
+                font-family: Lato;
+                font-style: normal;
+
+            }
             &:hover{
                 color: #FFFF;
                 background-color: $main-color;
@@ -195,6 +246,13 @@
             @include font-14-17;
             color: #000000;
             transition: color 0.3s, background-color 0.3s ;
+            @media (max-width:$mobile-bp){
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: none;
+                padding: 9px 37px;
+                color: #575757;
+            }
             &:hover{
                 color: #FFFF;
                 background-color: $main-color;
@@ -202,4 +260,9 @@
         }
     }
 
+}
+@media (max-width:$mobile-bp) {
+    .cart-img{
+        width: 143px;
+    height: 188px;}
 }

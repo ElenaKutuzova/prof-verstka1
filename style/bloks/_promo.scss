@@ -15,6 +15,16 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        @media(max-width: $tablet-bp){
+            height: 367px;
+            background-size: 52%;
+            background-position-x:   -50px; 
+        }
+        @media(max-width: $mobile-bp){
+            background-image: none;
+            height: 363px;
+            justify-content: center;
+        }
        
     }
     &-title{
@@ -24,8 +34,18 @@
         color: #222222;
         border-left: 12px solid  $main-color;
         padding-left: 16px;
-         margin-right: 90px;
-         z-index: 1;
+        margin-right: 90px;
+        z-index: 1;
+         @media(max-width: $tablet-bp){
+            font-size: 44px;
+            line-height: 53px;
+            margin-right: 15px;
+         }
+         @media(max-width: $mobile-bp){
+            font-size: 38px;
+            line-height: 46px;
+            text-align: center;
+         }
         
     }
     &-title-small{
@@ -33,6 +53,15 @@
         font-size: 32px;
         line-height: 38px;
         color: #222222;
+        @media(max-width: $tablet-bp){
+            font-size: 24px;
+            line-height: 29px;
+        }
+        @media(max-width: $mobile-bp){
+            font-size: 20px;
+            line-height: 24px;
+
+        }
     }
     &-title-pink{    
         color: $main-color;
