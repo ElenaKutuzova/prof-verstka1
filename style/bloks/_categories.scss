@@ -36,25 +36,28 @@
         }
     }
     &-item--women{    
-        background-image: url(../img/for-women.jpg);
-        background-repeat: no-repeat ;
-        @media(max-width:$tablet-bp){
-            background-size: cover;
-        }
+        background-image: url(../img/fon-pic.png), url(../img/woman-pic.png) ;
+        background-repeat: no-repeat, no-repeat ;
+        background-size: cover, cover;
+        // @media(max-width:$tablet-bp){
+        //     background-size: cover, cover;
+        // }
     }
     &-item--men{    
-        background-image: url(../img/for-men.jpg);
-        background-repeat: no-repeat ;
-        @media(max-width:$tablet-bp){
-            background-size: cover;
-        }
+        background-image: url(../img/fon-pic.png), url(../img/man-pic.png);
+        background-repeat: no-repeat, no-repeat ;
+        background-size: cover, cover;
+        // @media(max-width:$tablet-bp){
+        //     background-size: cover, cover;
+        // }
     }
     &-item--kids{    
-        background-image: url(../img/for-kids.jpg);
-        background-repeat: no-repeat ;
-        @media(max-width:$tablet-bp){
-            background-size: cover;
-        }
+        background-image: url(../img/fon-pic.png), url(../img/kids-pic.png);
+        background-repeat: no-repeat, no-repeat ;
+        background-size: cover, cover;
+        // @media(max-width:$tablet-bp){
+        //     background-size: cover;
+        // }
     }
     &-item--acc{
         width: 100%;

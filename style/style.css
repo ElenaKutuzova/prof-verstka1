@@ -411,36 +411,21 @@ body {
 }
 
 .categories-item--women {
-  background-image: url(../img/for-women.jpg);
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1180px) {
-  .categories-item--women {
-    background-size: cover;
-  }
+  background-image: url(../img/fon-pic.png), url(../img/woman-pic.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
 }
 
 .categories-item--men {
-  background-image: url(../img/for-men.jpg);
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1180px) {
-  .categories-item--men {
-    background-size: cover;
-  }
+  background-image: url(../img/fon-pic.png), url(../img/man-pic.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
 }
 
 .categories-item--kids {
-  background-image: url(../img/for-kids.jpg);
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1180px) {
-  .categories-item--kids {
-    background-size: cover;
-  }
+  background-image: url(../img/fon-pic.png), url(../img/kids-pic.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
 }
 
 .categories-item--acc {
@@ -835,10 +820,10 @@ body {
 /* feedback */
 .feedback {
   background-color: #F4F4F4B2;
-  background-image: url(../img/feedback-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left bottom;
+  background-image: url(../img/feed-fon.png), url(../img/feed-pic.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, left bottom;
   padding-top: 100px;
   padding-bottom: 155px;
 }
@@ -848,11 +833,11 @@ body {
     padding-top: 64px;
     padding-bottom: 140px;
     background-position-x: -350px;
-    background-position-y: 100px;
+    background-position-y: 50px;
   }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 767px) {
   .feedback {
     padding-top: 64px;
     padding-bottom: 110px;

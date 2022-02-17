@@ -1,20 +1,21 @@
 .feedback{
     background-color: #F4F4F4B2;
-    background-image: url(../img/feedback-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;    
+    background-image: url(../img/feed-fon.png), url(../img/feed-pic.jpg) ;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, left bottom;    
     padding-top: 100px;
     padding-bottom: 155px;
     @media(max-width: $tablet-bp){
         padding-top: 64px;
         padding-bottom: 140px;        
         background-position-x: -350px;
-            background-position-y: 100px;
+            background-position-y: 50px;
     }
-    @media(max-width: $tablet-bp){
+    @media(max-width: $mobile-bp){
         padding-top: 64px;
-        padding-bottom: 110px;   
+        padding-bottom: 110px;  
+        
         background-position-y: 0px;
         background-position-x: -400px;
   
