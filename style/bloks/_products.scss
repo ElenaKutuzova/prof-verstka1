@@ -33,6 +33,8 @@
       text-align: center;       
       }
       &-card{
+          display: flex;
+          flex-direction: column;
           width: 360px;    
           background: #F8F8F8;
           position: relative;
@@ -189,10 +191,3 @@
           display: none;
       }
         }
-.block-card{
-    display: flex;
-    
-    flex-direction: column;
-    
-    
-}

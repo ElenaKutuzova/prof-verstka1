@@ -520,6 +520,13 @@ body {
 }
 
 .products-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 360px;
   background: #F8F8F8;
   position: relative;
@@ -718,16 +725,6 @@ body {
   .tablet {
     display: none;
   }
-}
-
-.block-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .fas {
